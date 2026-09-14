@@ -13,9 +13,9 @@ services:
       DATA_DIR: /app/data
       PORT: "20128"
       HOSTNAME: "0.0.0.0"
-      SKIP_UPDATE: true
       NODE_ENV: production
       HEADROOM_URL: http://headroom:8787
+    command: node custom-server.js --skip-update
     depends_on:
       - headroom
 
